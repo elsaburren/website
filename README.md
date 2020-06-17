@@ -9,6 +9,6 @@ Define your own colours and styles of the classes myFoo in myStyle.css.
 This template's pages are php files (this allows us to include_once the tab menu and footer from separate html files). 
 So to display the website, a php interpreter is required.
 
-Note that the logo.png is included in the myTabs.html.
+Note that the logo.png is included in myTabs.html.
 
 Have fun!
