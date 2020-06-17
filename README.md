@@ -6,7 +6,7 @@ an external library, w3.css (needs to be included by you).
 
 Use myStyle.css to define your own colours and style of the classes myFoo.
 
-This template's main pages are php files (this allows me to include_once the tab menu and footer from separate html files). 
+This template's pages are php files (this allows me to include_once the tab menu and footer from separate html files). 
 So to display the website, a php interpreter is required.
 
 Note that the logo.png is included in the myTabs.html.
