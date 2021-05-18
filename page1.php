@@ -12,8 +12,8 @@
 </head>
 <body id='Page1'>
 <div class="myPageWrapper">
-	<a name="scroll-top"></a>
 	<div class="myPage">
+		<a name="scroll-top"></a>
 		<?php include_once("myTabs.html"); ?>
 		<div class="myPageContent">
 			<h1>Page 1</h1>
