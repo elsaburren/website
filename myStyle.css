@@ -5,16 +5,18 @@ title {
 	display: none;
 }
 body {
-	font-family: Arial;
+	font-family: Lato!important;
 	display: block;
 }
 h1 {
 	font-size: 1.5em !important;
+	font-family: Recoleta!important;
 	color: rgb(69,69,69);
 	font-weight: bold;
 }
 h2 {
 	font-size: 1.2em !important;
+	font-family: Recoleta!important;
 	color: rgb(69,69,69);
 	font-weight: bold !important;
  	margin-top: 0.2em !important;
@@ -22,6 +24,7 @@ h2 {
 }
 h3 {
 	font-size: 1.1em !important;
+	font-family: Recoleta!important;
 	color: rgb(69,69,69);
 	font-weight: bold !important;
  	margin-top: 0.2em !important;
@@ -57,17 +60,17 @@ a.myLinkButton{
 }
 a.tabTitle, a.tabTitle:visited {
 	color: rgb(0,0,0);
-	text-decoration:none;
+	text-decoration:none!important;
 }
-a.tabTitle:active, #Home a.tabHome, #Page1 a.tabPage1, #Page2 a.tabPage2 {
+a.tabTitle:active, #Home a.tabHome, #Page1 a.tabPage1, #Page2 a.tabPage2  {
 	color: rgb(19,19,19) !important;
 	background-image: linear-gradient(to top, rgb(180, 180, 180), rgb(219,219,219));
 	font-weight: bold;
-	text-decoration:none; 
+	text-decoration:none!important; 
 }
 .myPageWrapper{
 	background-color: rgb(153,153,153);
-	background-image: linear-gradient(to bottom, rgb(153, 153, 153), rgb(235,235,235));
+	#background-image: linear-gradient(to bottom, rgb(153, 153, 153), rgb(180,180,180));
 	width: 100vw;	
 	text-align: center;
 }
@@ -89,7 +92,12 @@ a.tabTitle:active, #Home a.tabHome, #Page1 a.tabPage1, #Page2 a.tabPage2 {
 	font-size: 1.1em;
 }
 #Page1 div.myPageContent, #Page2 div.myPageContent {
-	background-image: linear-gradient(to bottom, rgb(255,255,255), rgba(0,0,128,0.1), rgba(0,0,128,0.15), rgba(0,0,128,0.1), rgb(255,255,255));
+	#background-image: linear-gradient(to bottom, rgb(255,255,255), rgba(0,0,128,0.08), rgba(0,0,128,0.10), rgba(0,0,128,0.08), rgb(255,255,255));
+	background: rgba(0,0,128,0.03);
+}
+.myHighlight{
+	background-color: rgb(255,189,210);
+	margin-left: 5%;
 }
 .mySection{
 	padding: 0 0 0 0;
@@ -97,38 +105,58 @@ a.tabTitle:active, #Home a.tabHome, #Page1 a.tabPage1, #Page2 a.tabPage2 {
 }
 .myTextBox{
 	background-color: rgb(255,255,255);
+	#background-color: rgba(0,0,128,0.1);
+	#background-image: linear-gradient(to top, rgba(0,0,128,0.05), rgba(0,0,128,0.01));
 	padding: 5px 10px 20px 15px !important;
 	max-width: 100%;
 	border: 1px solid rgb(200,200,200);
 	border-radius: 13px;
 	margin-top: 20px;
+}
+.mySmallTextBox{
+	background-color: rgb(255,255,255);
+	padding: 5px 5px 5px 3px;
+	max-width: 500px;
+	border: 1px solid rgb(200,200,200);
+	border-radius: 13px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 .myBlueBox{
-	background-image: linear-gradient(to top, rgba(0,0,128,0.1), rgba(0,0,128,0));
-	padding: 5px 10px 20px 15px !important;
+	background-image: linear-gradient(to top, rgba(0,0,128,0.1), rgba(0,0,128,0.0));
+	padding: 10px 10px 10px 10px !important;
 	max-width: 100%;
 	border: 1px solid rgb(200,200,200);
 	border-radius: 13px;
 	margin-top: 20px;
-}
-.myCol{
-	width: 100%;
+	color: rgb(55,55,55);
 }
 @media only screen and (min-width: 768px){
 	.myCol {width: 45%;}
 	.myRight {float: right; margin-right: 2.5%; margin-left: 2.5%}
 	.myLeft {float: left; margin-left: 2.5%; margin-right: 2.5%}
 	.myCenter {margin-left: 27.5%; margin-right: 27.5%;}
-	.mySmallTextBox {padding: 10px 10px 15px 10px !important;}	
-	// #div-Software-Text {height: 210px;}
+	.mySmallTextBox {padding: 10px 10px 15px 10px !important;}
 }
-.myRow{
-	min-height: 60vh;
+.myButton{
+	background-color: rgba(255,255,255,0) !important;
 }
-.myRow::after {
-	display: table;	
-  	content: "";
-  	clear: both;
+.mySmallTable{
+	overflow-x: scroll !important;
+	font-size: 1em;
+
+}
+.myPublished{
+	color: rgb(153, 153, 153);
+	font-size: 0.9em;
+	margin-top: 0.2em;
+	margin-bottom: 0.2em; 
+}
+.mySmallFont{
+	color: rgb(69,69,69);
+	font-size: 1.0em !important;
 }
 .myFooter {
 	width: 95%;
@@ -157,4 +185,126 @@ a.tabTitle:active, #Home a.tabHome, #Page1 a.tabPage1, #Page2 a.tabPage2 {
 #menuDropDown:checked ~ #myTabsDropDown{
 	display: block;
 
+}
+input.myPopUp{
+	display: none;
+}
+label.myPopUp{
+	text-decoration: underline;
+}
+input.myPopUp:checked + span{
+	display: inline;
+}
+input.myPopUp:not(:checked) + span{
+	display: none;
+}
+label.radioHideUnhide {
+	color: rgb(0,0,128);
+	font-weight: bold;
+}
+input[name="radioArticle1"] {
+	display: none;
+}
+input#showArticle1:checked ~ div#libraryArticle1{
+	display: block;
+}
+input#showArticle1:checked + label{
+	display: none;
+}
+input#showArticle1:not(:checked) ~ div#libraryArticle1{
+	display: none;
+}
+input#showArticle1:not(:checked) + label{
+	display: block;
+}
+input[name="radioArticle2"] {
+
+	display: none;
+}
+input#showArticle2:checked ~ div#libraryArticle2{
+	display: block;
+}
+input#showArticle2:checked + label{
+	display: none;
+}
+input#showArticle2:not(:checked) ~ div#libraryArticle2{
+	display: none;
+}
+input#showArticle2:not(:checked) + label{
+	display: block;
+}
+input[name="radioArticle3"] {
+	display: none;
+}
+input#showArticle3:checked ~ div#libraryArticle3{
+	display: block;
+}
+input#showArticle3:checked + label{
+	display: none;
+}
+input#showArticle3:not(:checked) ~ div#libraryArticle3{
+	display: none;
+}
+input#showArticle3:not(:checked) + label{
+	display: block;
+}
+input[name="radioArticle4"] {
+	display: none;
+}
+input#showArticle4:checked ~ div#libraryArticle4{
+	display: block;
+}
+input#showArticle4:checked + label{
+	display: none;
+}
+input#showArticle4:not(:checked) ~ div#libraryArticle4{
+	display: none;
+}
+input#showArticle4:not(:checked) + label{
+	display: block;
+}
+input[name="radioArticle5"] {
+	display: none;
+}
+input#showArticle5:checked ~ div#libraryArticle5{
+	display: block;
+}
+input#showArticle5:checked + label{
+	display: none;
+}
+input#showArticle5:not(:checked) ~ div#libraryArticle5{
+	display: none;
+}
+input#showArticle5:not(:checked) + label{
+	display: block;
+}
+input[name="radioArticle6"] {
+	display: none;
+}
+input#showArticle6:checked ~ div#libraryArticle6{
+	display: block;
+}
+input#showArticle6:checked + label{
+	display: none;
+}
+input#showArticle6:not(:checked) ~ div#libraryArticle6{
+	display: none;
+}
+input#showArticle6:not(:checked) + label{
+	display: block;
+}
+input[name="radioArticle7"] {
+	display: none;
+}
+input#showArticle7:checked ~ div#libraryArticle7{
+	display: block;
+}
+input#showArticle7:checked + label{
+	display: none;
+}
+input#showArticle7:not(:checked) ~ div#libraryArticle7{
+	display: none;
+}
+input#showArticle7:not(:checked) + label{
+	display: block;
 }
