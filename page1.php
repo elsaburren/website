@@ -18,19 +18,24 @@
 		<div class="myPageContent">
 			<h1>Page 1</h1>
 			<hr>
-			<div class="myTextBox">
-				<h2>Title 1</h2>
-				ProMaSta is an acronym for Probability, Mathematics and Statistics. It reflects our interdisciplinary approach to problem solving.
+			<div class="myBlueBox">
+				<center><img src="https://www.promasta.com/img/img_pricing_code.png" alt="pricing models"></center>
 			</div>
 			<hr>
-			<div class="myTextBox">
+			<div class="myBlueBox">
 				<h2>Title 2</h2>
-				 We offer our clients distinct support in actuarial analytics in order to increase profitability, improve their risk management tools and allowing them to make informed business decisions.  
+				 <ul>
+					<p>- Over 10 years of experience </p>
+					<p>- Specialized in property and casualty treaty reinsurance</p>
+					<p>- Actuarial evaluations of complex treaty structures</p>				
+					<p>- Delivers exposure and experience ratings</p>
+					<p>- Access to an additional expert in peak periods</p>
+				</ul>
 			</div>
 			<hr>
-			<div class="myTextBox">
+			<div class="myBlueBox">
 				<h2>Title 3</h2>
-				Our clients are reinsurers, investment managers specializing in insurance investments and first insurers for optimizing their reinsurance.
+				Text, text, text
 			</div>
 		</div>
 		<?php include_once("myFooter.html"); ?>
