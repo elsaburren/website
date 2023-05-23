@@ -19,7 +19,7 @@
 			<h1>Page 1</h1>
 			<hr>
 			<div class="myBlueBox">
-				<center><img src="https://www.promasta.com/img/img_pricing_code.png" alt="pricing models"></center>
+				<center><img src="https://yourdomain/directory/img_pricing_code.png" alt="pricing models"></center>
 			</div>
 			<hr>
 			<div class="myBlueBox">
